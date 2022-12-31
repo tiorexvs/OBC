@@ -1,0 +1,21 @@
+public class Func2OBC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        coche miCoche=new coche();
+        miCoche.incrementarPuertas();
+        System.out.println("Mi coche tiene ahora "+miCoche.puertas+" puerta");
+    }
+  
+public static class coche{
+    int puertas;
+    
+    void incrementarPuertas(){
+        puertas++;
+        }
+
+    }    
+}
