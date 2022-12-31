@@ -1,0 +1,18 @@
+public class Func1OBC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int res;
+        res=suma(3,45,7);
+        System.out.println(res);
+    }
+    
+    static int suma(int a, int b, int c){
+        
+        return a+b+c;
+    }
+    
+}
