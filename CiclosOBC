@@ -1,0 +1,50 @@
+public class CiclosOBC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Uso de condicional if
+        var numero=4;
+        if(numero>0){
+            System.out.println("el numero es positivo");
+        } if (numero <0){
+            System.out.println("el numero es negativo");                        
+             } if (numero==0){
+                 System.out.println("  el numero es cero");
+                                  }
+        // Uso de while
+        var numeroWhile=0;     
+        while (numeroWhile<3){
+            System.out.println(numeroWhile);
+            numeroWhile++;
+        }
+        
+        // Uso de Do-While solo se ejecuta una vez
+        var numeroDo=2;
+        do {
+            System.out.println("El numero en do-while es "+numeroDo +"\n");
+            numeroDo++;
+        } while (numeroDo<3);
+        
+        // uso de ciclo for
+        System.out.println("Ejecucion del ciclo for");
+        int numeroFor;
+        for (numeroFor=0;numeroFor<3;numeroFor++){
+            System.out.println(numeroFor);
+        }
+        
+        //Uso de switch usando JDK17 Oracle, ya no es necesario la sentencia break
+        var estacion="verano";
+        switch (estacion){
+            case "primavera" -> System.out.println("La estacion es primavera");
+            case "verano" -> System.out.println("La estacion es verano");
+            case "otoño" -> System.out.println("La estacion es otoño");
+            case "invierno" -> System.out.println("La estacion es invierno");
+            default -> System.out.println("No es una estacion");
+        }
+                
+        
+    }
+    
+}
