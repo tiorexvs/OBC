@@ -1,0 +1,58 @@
+public class Encapsulacion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // instanciar clase Persona obteniendo un objeto
+        
+		Persona mujer=new Persona();
+
+		// Se establecen los atributos mediante el metodos setter
+        mujer.setNombre("Alice");
+        mujer.setEdad(21);
+		mujer.setTelefono("4215674389");
+		// Se muestran los valores por pantalla usnado el metodo getter
+        System.out.println("La persona tiene el nombre de "+mujer.getNombre());
+        System.out.println("Con la edad de "+mujer.getEdad());
+		System.out.println("y tiene el numero telefonico: "+mujer.getTelefono());
+        
+           
+    }
+    
+}
+
+class Persona{
+    
+	// Se usa el modificar private para encapsular las propiedades de la clase
+    private int edad;
+    private String nombre;
+	private String telefono;
+	
+	// Conjunto de Setter y Getter para manupulacion de propiedades
+	// fuera de la clase Persona
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+	public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+    
+}
